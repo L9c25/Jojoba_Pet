@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;600;900&family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Jost:wght@700&family=Poppins:wght@300;600;900&family=Red+Hat+Display:wght@300&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Heebo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Red Hat Display', sans-serif; */
+}
+
+a {
+    text-decoration: none;
+    color: rgb(229, 236, 133);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+::-webkit-scrollbar-track{
+    background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ffda84;
+    border-radius: 15px;
+
+}
+
+
+.servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    height: 100%;
+
+}
+
+.servicos h3 {
+    margin-left: 20px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 6em;
+    align-items: center;
+    justify-content: center;
+    /* /* background-color: #93a8da; */
+    box-shadow: 0px 4px 8px 0.1px rgb(38, 40, 41);
+    background-image: linear-gradient(to left, rgb(62, 62, 62), rgb(38, 40, 41), rgb(62, 62, 62));
+    font-family: 'Heebo', sans-serif;
+}
+
+
+.cabecalho img {
+    width: 10em;
+    margin-right: 20px;
+}
+
+.cabecalho a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+}
+
+
+
+.campo_pesq {
+    width: 50%;
+}
+
+#pesq {
+    border-radius: 20px;
+    width: 100%;
+    height: 3em;
+    background-color: rgba(255, 255, 255);
+    padding: 0px 10px;
+    border: none;
+    border-style: none;
+    outline-style: none;
+}
+
+.s_opc {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    transition: all .2s cubic-bezier(.26, -0.01, .3, 1);
+}
+
+
+.s_opc:hover {
+    text-shadow: 0px 0px 0.9em rgba(255, 255, 255, 0.579);
+    transition: all .2s cubic-bezier(.26, -0.01, .3, 1);
+}
+
+label {
+    cursor: pointer;
+}
+
+/* conteudos: */
+/* conteudos: */
+
+.s_cachorro {
+    display: block;
+    margin-top: 5em;
+    margin-bottom: 8em;
+}
+
+.d_cachorro,
+.d_gato {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.d_cachorro h2,
+.d_gato h2 {
+    display: inline-block;
+    position: relative;
+    font-family: 'Jost', sans-serif;
+    margin: 30px 0px;
+    color: rgb(75, 75, 75);
+}
+
+.container_1,
+.container_2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* grid-template-columns: repeat(5, 1fr); */
+    gap: 30px;
+    /* row-gap: 60px; */
+
+}
+
+@media only screen and (max-width:1342px) {
+
+    .container_1,
+    .container_2 {
+        gap: 16px;
+    }
+}
+
+.products {
+    height: 20em;
+    width: 14em;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(82, 82, 82, 0.371);
+    box-shadow: 0px 0px 6px rgba(82, 82, 82, 0.371);
+    border-radius: 5px;
+
+    padding: 10px;
+
+    transition: all .1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.image-product {
+    transform: scale(.8);
+    display: flex;
+    margin: 0px 0px 2em 0px;
+    justify-content: center;
+}
+
+.image-product img {
+    width: 80%;
+}
+
+.text-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40%;
+
+}
+
+.text-product h3 {
+    font-family: 'Jost', sans-serif;
+    display: inline-block;
+    color: rgba(60, 59, 59, 0.874);
+    font-size: 100%;
+    letter-spacing: -1px;
+    color: rgb(0, 180, 6);
+}
+
+
+
+.old-price {
+    font-family: 'Jost', sans-serif;
+    font-size: 70%;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: rgba(165, 49, 49, 0.829);
+    margin-top: 12px;
+}
+
+
+.s_gato {
+    display: block;
+    margin-bottom: 15em;
+}
+
+.product_link {
+    text-decoration: none;
+    color: black;
+}
+
+.products:hover {
+    transform: scale(1.01);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: rgb(250, 250, 250);
+}
+
+
+
+
+/* RODA PÉ DO SITE */
+
+
+#footer {
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: rgb(38, 40, 41);
+
+}
+
+.Redes_Sociais {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Redes_Sociais h4 {
+    margin: 0px 0px 1.2em 0px;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons div {
+    display: flex;
+}
+
+.icons div:nth-child(2) {
+    margin: 0px 2em;
+}
+
+.locate {
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 0px 4em;
+    margin: 0px 2em;
+
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+
+
+}
+
+.locate div p {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.form_feedback h3 {
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1em;
+
+}
+
+
+textarea {
+    resize: none;
+    width: 25em;
+    height: 9em;
+
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+.form_feedback form input {
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    outline: none;
+    border: none;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    bottom: 34px;
+    left: 23.1em;
+}
+
+.footer-copyright {
+    background-color: rgb(30, 30, 32);
+    color: white;
+    padding: 0.3em 0px 0.4em 2em;
+}
+
+
+
+@media only screen and (max-width:1317px) {
+    textarea {
+        width: 20em;
+        height: 9em;
+    }
+
+    .form_feedback form input {
+        bottom: 34px;
+        left: 18.1em;
+    }
+}
