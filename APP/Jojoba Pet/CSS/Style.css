@@ -126,20 +126,20 @@ label {
     margin-bottom: 4em;
 }
 
-.s_papagaio {
+.s_aves {
     margin-bottom: 8em;
 }
 
 .d_cachorro,
 .d_gato,
-.d_papagaio {
+.d_aves {
     margin: 0 auto;
     width: 80%;
 }
 
 .d_cachorro h2,
 .d_gato h2,
-.d_papagaio h2 {
+.d_aves h2 {
     display: inline-block;
     position: relative;
     font-family: 'Jost', sans-serif;
