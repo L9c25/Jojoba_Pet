@@ -41,7 +41,7 @@
             <img src="/assets/ball dog toy.png" alt="Bola de Brinquedo">
         </div>
         <div class="produto-info">
-            <h1>Bolinha de Borracha</h1>
+            <h1 id="nome-produto">Bolinha de Borracha</h1>
             <hr>
             <div class="text-product">
                 <p class="old-price">de <s>R$ 210,74</s> por:</p>
@@ -239,14 +239,16 @@
 
 
 
-    <div>
+    <div class="alinhar">
 
         <div class="form-inscrição">
-            <p>Cadastre-se e receba nossas promoções e novidades antes de todo mundo.<br>
-                Ao se cadastrar você concorda com a nossa<a href="#"> política de privacidade.</a></p>
-            <input type="email" name="email" id="email" required placeholder=" Digite seu Email">
+            <p class="opção">Cadastre-se e receba nossas promoções e novidades antes de todo mundo.<br>
+                Ao se cadastrar você concorda com a nossa<a href="#" class="destacarcor"> política de privacidade.</a></p>
 
-            <p>Escolha uma opção:</p>
+
+            <input type="email" name="email" id="email" required placeholder="Digite seu Email" class="imputinsc">
+
+            <p class="opção2">Escolha uma opção:</p>
             <select name="opcao" id="opcao" required>
                 <option value="" disabled selected>Seu Pet</option>
                 <option value="opcao1">Gato</option>
