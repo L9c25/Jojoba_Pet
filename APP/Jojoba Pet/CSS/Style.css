@@ -120,17 +120,28 @@ label {
 .s_cachorro {
     display: block;
     margin-top: 5em;
-    margin-bottom: 8em;
+    margin-bottom: 4em;
+}
+
+.s_gato {
+    display: block;
+    margin-bottom: 4em;
+}
+
+.s_papagaio{
+    margin-bottom: 18em;
 }
 
 .d_cachorro,
-.d_gato {
+.d_gato, 
+.d_papagaio{
     margin: 0 auto;
     width: 80%;
 }
 
 .d_cachorro h2,
-.d_gato h2 {
+.d_gato h2,
+.d_papagaio h2 {
     display: inline-block;
     position: relative;
     font-family: 'Jost', sans-serif;
@@ -215,12 +226,6 @@ label {
     letter-spacing: -1px;
     color: rgba(165, 49, 49, 0.829);
     margin-top: 12px;
-}
-
-
-.s_gato {
-    display: block;
-    margin-bottom: 15em;
 }
 
 .product_link {
