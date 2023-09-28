@@ -12,6 +12,7 @@
 
 a {
     text-decoration: none;
+    color: rgb(229, 236, 133);
 }
 
 body {
@@ -19,14 +20,26 @@ body {
     height: 100vh;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #3B3B3B;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8e8e8e;
+    border-radius: 15px;
+
+}
+
+
 .servicos {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
     color: white;
-    height: 100%;
-
 }
 
 .servicos h3 {
@@ -91,6 +104,10 @@ header {
 .s_opc:hover {
     text-shadow: 0px 0px 0.9em rgba(255, 255, 255, 0.579);
     transition: all .2s cubic-bezier(.26, -0.01, .3, 1);
+}
+
+label {
+    cursor: pointer;
 }
 
 /* cartão com imagem e preço de produto*/
@@ -412,7 +429,6 @@ table.distancia {
 
 /* RODA PÉ DO SITE */
 
-
 #footer {
     display: flex;
     height: 30vh;
@@ -445,7 +461,16 @@ table.distancia {
 
 .icons div {
     display: flex;
-    margin-right: 2em;
+    transition: all .2s cubic-bezier(.26, -0.01, .3, 1);
+}
+
+.icons div:hover {
+    transform: translateY(-.6em);
+    transition: all .2s cubic-bezier(.26, -0.01, .3, 1);
+}
+
+.icons div:nth-child(2) {
+    margin: 0px 2em;
 }
 
 .locate {
@@ -456,8 +481,8 @@ table.distancia {
     align-items: center;
     flex-direction: column;
 
-    margin: 0 5%;
     padding: 0px 4em;
+    margin: 0px 2em;
 
     border-right: 2px solid rgba(255, 255, 255, 0.3);
     border-left: 2px solid rgba(255, 255, 255, 0.3);
@@ -470,7 +495,23 @@ table.distancia {
     text-align: center;
     margin-top: 30px;
     color: white;
+    transition: all .1s cubic-bezier(.26, -0.01, .3, 1);
 }
+
+.locate div p:hover{
+    color: rgba(255, 255, 255, 0.858);
+    transition: all .1s cubic-bezier(.26, -0.01, .3, 1);
+}
+
+.locate div:nth-child(1){
+    transition: all .2s cubic-bezier(.26, -0.01, .3, 1);
+}
+
+.locate div:nth-child(1):hover{
+    transform: translateY(-.6em);
+    transition: all .2s cubic-bezier(.26, -0.01, .3, 1);
+}
+
 
 .form_feedback h3 {
     color: white;
@@ -516,6 +557,17 @@ textarea {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width:1317px) {
     textarea {
         width: 20em;
@@ -525,5 +577,65 @@ textarea {
     .form_feedback form input {
         bottom: 34px;
         left: 18.1em;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .servicos {
+        color: white;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        height: 8em;
+        align-items: center;
+        justify-content: center;
+        /* /* background-color: #93a8da; */
+        box-shadow: 0px 4px 8px 0.1px rgb(38, 40, 41);
+        background-image: linear-gradient(to left, rgb(62, 62, 62), rgb(38, 40, 41), rgb(62, 62, 62));
+        font-family: 'Heebo', sans-serif;
+    }
+
+
+    .cabecalho img {
+        width: 10em;
+        margin-right: 20px;
+    }
+
+    .cabecalho a {
+        text-decoration: none;
+    }
+
+    .cabecalho {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 80%;
+        height: 8em;
+    }
+
+
+
+    .campo_pesq {
+        width: 70%;
+    }
+
+    #pesq {
+        border-radius: 20px;
+        width: 100%;
+        height: 3em;
+        background-color: rgba(255, 255, 255);
+        padding: 0px 10px;
+        border: none;
+        border-style: none;
+        outline-style: none;
+    }
+
+    .s_opc {
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        transition: all .2s cubic-bezier(.26, -0.01, .3, 1);
     }
 }
