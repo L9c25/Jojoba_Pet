@@ -251,6 +251,22 @@ label {
     margin-bottom: 10em;
 
 }
+.acessorio-title{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+
+}
+
+.acessorio-text p{
+    font-size: 18px;
+}
+
+.acessorio-text{
+    width: 80%;
+    margin-left: 25px;
+}
+
 
 .content-acessorio {
     display: flex;
@@ -259,9 +275,11 @@ label {
 
     background-size: cover;
     background-image: url("../assets/bg.png");
+
     width: 730px;
     min-width: 362px;
     height: 330px;
+
     color: white;
     padding: 20px;
     border-top-left-radius: 7px;
