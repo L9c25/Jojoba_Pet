@@ -398,6 +398,10 @@ table.distancia {
     margin-right: 10px;
 /* colocarb ele no meio do espaçamento*/
 }
+#opcao{
+    outline: none;
+    border: none;
+}
 .form-inscrição select {
     width: 200px;
     padding: 5px;
@@ -418,12 +422,15 @@ table.distancia {
     margin-left: 1%;
     border-radius: 5px;
     width: 400px;
+    padding-left: 1%;
+    outline: none;
+    border: none;
 }
 .destacarcor{
     color: #007bff;
 }
-#email {
-    padding-left: 1%;
+#opcao{
+    border-radius: ;
 }
 .alinhar{
     background: linear-gradient(to bottom,#39393a, #1d1d1d);
