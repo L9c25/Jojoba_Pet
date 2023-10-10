@@ -341,6 +341,7 @@ table.distancia {
     display: flex;
     align-items: center;
     border-radius: 40px;
+    display:flex;
 }
 
 .review img {
@@ -354,12 +355,13 @@ table.distancia {
 .review h3 {
     font-size: 1.2rem;
     margin: 0;
+    width: 20%;
 }
 
 .review p {
     font-size: 1.14rem;
-    margin-left: 7%;
     text-align: center;
+    width: 60%;
 }
 
 .rating {
@@ -396,6 +398,10 @@ table.distancia {
     margin-right: 10px;
 /* colocarb ele no meio do espaçamento*/
 }
+#opcao{
+    outline: none;
+    border: none;
+}
 .form-inscrição select {
     width: 200px;
     padding: 5px;
@@ -416,6 +422,9 @@ table.distancia {
     margin-left: 1%;
     border-radius: 5px;
     width: 400px;
+    padding-left: 1%;
+    outline: none;
+    border: none;
 }
 .destacarcor{
     color: #007bff;
